@@ -50,7 +50,7 @@ const Landing2 = () => {
             {list.map((e,i)=>{
               return (<div key={i} className='p-3 py-4 text-lg flex justify-between items-center border-b-2 border-b-gray-300 cursor-pointer active:border-b-blue-900'>
                 <div>{e.title}</div>
-                <div className=' '><Image src="/down_arrow.svg" width={30} height={30} alt='down' /></div>
+                <div className=''><Image src="/down_arrow.svg" width={30} height={30} alt='down' /></div>
             </div>)
             })}
         </section>

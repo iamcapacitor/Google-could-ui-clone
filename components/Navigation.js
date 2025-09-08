@@ -1,0 +1,55 @@
+import React from 'react'
+import Image from 'next/image'
+
+
+const Navigation = () => {
+  return (
+    <>
+      <nav className='sticky top-0 w-full bg-white z-10'>
+        <nav className='border border-black py-2 px-[2vw] text-sm text-gray-500 shadow shadow-gray-700 flex items-center gap-[3vw] justify-between '>
+          {/* part 1 */}
+          <div className='flex items-center gap-x-[3vw]'>
+            <div className='invert hidden  '>
+              <Image src="/menulines.svg" width={30} height={30} alt='menulines' />
+            </div>
+            <div className='w-35 py-2'>
+              <img src="https://www.gstatic.com/cgc/google-cloud-logo.svg" alt="mainlogo" loading="lazy" className='w-auto' />
+            </div>
+            <ul className='flex gap-3 '>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          {/* part 2 */}
+          <div className='flex gap-[2vw] items-center'>
+            <div className='invert ' >
+              <Image src="/search.svg" width={30} height={30} alt='Search' />
+            </div>
+            <div>
+              <ul className='flex gap-[2vw] '>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Console</a></li>
+              </ul>
+            </div>
+            <div className='invert border rounded-full hover:bg-amber-950 '>
+              <Image src="/dots3.svg" width={30} height={30} alt='Menudots' />
+            </div>
+            <div className='px-2 border border-black rounded-full w-10 h-10 overflow-hidden '>
+              profileimage
+            </div>
+          </div>
+        </nav>
+        <div className=' p-2 border text-sm flex justify-end gap-[2vw] items-center'>
+          <button className='p-1 px-3 border border-blue-500 rounded-full text-blue-700 font-bold hover:shadow shadow-gray-500 '>Contact us</button>
+          <button className='p-1 px-3 border border-blue-500 rounded-full bg-blue-700 text-white hover:shadow shadow-gray-500 '>Start free</button>
+        </div>
+      </nav>
+    </>
+  )
+}
+
+export default Navigation

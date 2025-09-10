@@ -9,13 +9,13 @@ const Navigation = () => {
         <nav className='border border-black py-2 px-[2vw] text-sm text-gray-500 shadow shadow-gray-700 flex items-center gap-[3vw] justify-between '>
           {/* part 1 */}
           <div className='flex items-center gap-x-[3vw]'>
-            <div className='invert hidden  '>
-              <Image src="/menulines.svg" width={30} height={30} alt='menulines' />
+            <div className='invert  md:hidden  '>
+              <Image src="/menulines.svg" width={25} height={25} alt='menulines' />
             </div>
-            <div className='w-35 py-2'>
+            <div className=' w-30 md:w-35 py-2'>
               <img src="https://www.gstatic.com/cgc/google-cloud-logo.svg" alt="mainlogo" loading="lazy" className='w-auto' />
             </div>
-            <ul className='flex gap-3 '>
+            <ul className='hidden md:flex gap-3 '>
               <li><a href="#">Overview</a></li>
               <li><a href="#">Solutions</a></li>
               <li><a href="#">Products</a></li>
@@ -25,11 +25,11 @@ const Navigation = () => {
           </div>
           {/* part 2 */}
           <div className='flex gap-[2vw] items-center'>
-            <div className='invert ' >
+            <div className='invert hidden md:visible ' >
               <Image src="/search.svg" width={30} height={30} alt='Search' />
             </div>
             <div>
-              <ul className='flex gap-[2vw] '>
+              <ul className='hidden md:flex gap-[2vw] '>
                 <li><a href="#">Docs</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Console</a></li>
@@ -43,7 +43,7 @@ const Navigation = () => {
             </div>
           </div>
         </nav>
-        <div className=' p-2 border text-sm flex justify-end gap-[2vw] items-center'>
+        <div className=' hidden p-2 border text-sm md:flex justify-end gap-[2vw] items-center'>
           <button className='p-1 px-3 border border-blue-500 rounded-full text-blue-700 font-bold hover:shadow shadow-gray-500 '>Contact us</button>
           <button className='p-1 px-3 border border-blue-500 rounded-full bg-blue-700 text-white hover:shadow shadow-gray-500 '>Start free</button>
         </div>

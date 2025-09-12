@@ -12,8 +12,8 @@ const Navigation = () => {
             <div className='invert  md:hidden  '>
               <Image src="/menulines.svg" width={25} height={25} alt='menulines' />
             </div>
-            <div className=' w-30 md:w-35 py-2'>
-              <img src="https://www.gstatic.com/cgc/google-cloud-logo.svg" alt="mainlogo" loading="lazy" className='w-auto' />
+            <div className=' w-30 md:w-35'>
+              <img src="/mainlogo.png" alt="mainlogo" loading="lazy" className='w-auto' />
             </div>
             <ul className='hidden md:flex gap-3 '>
               <li><a href="#">Overview</a></li>

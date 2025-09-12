@@ -44,7 +44,7 @@ const Mainlanding1 = () => {
             <button className='p-3 border border-blue-500 rounded-full text-blue-700 font-bold hover:shadow shadow-gray-500 '>Contact sales</button>
           </div>
         </div>
-        <div className="box2 h-fit w-[98%] md:w-[90%] max-w-[450px] rounded-4xl overflow-hidden hover:rounded-xl transition-all bg-red-400">
+        <div className="box2 h-fit w-[98%] md:w-[90%] max-w-[450px] rounded-4xl overflow-hidden hover:rounded-xl transition-all lg:translate-y-10 bg-red-400">
           <img className='w-auto' src="https://www.gstatic.com/bricks/image/c0deb473-e886-496f-94cf-631303dffb39.jpg" alt="google image" />
         </div>
       </main>

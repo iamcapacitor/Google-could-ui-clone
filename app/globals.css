@@ -4,6 +4,9 @@
   --background: #ffffff;
   --foreground: #0d0f2c;
 }
+html{
+  font-size: 16px;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -27,10 +30,15 @@ body {
 a:hover{
   color: rgb(59, 85, 197);
 }
-
 .truncate-text {
   display: -webkit-box;
   -webkit-line-clamp: 3;  /* limit to 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@media screen and (min-width:1900px){
+  html{
+    font-size: 0.9vw !important;
+  }
 }

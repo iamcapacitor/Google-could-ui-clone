@@ -28,8 +28,8 @@ const Mainlanding1 = () => {
   
   return (
     <>
-      <main className=' px-[1vw] md:px-[4.5vw] py-6 md:py-20 bg-white lg:h-[450px] flex flex-col lg:flex-row items-center gap-5 justify-between 2xl:justify-evenly '>
-        <div className="box1 border p-1 w-[95%] md:w-[90%] max-w-[600px] flex flex-col gap-[2vw] items-start ">
+      <main className=' px-[1vw] md:px-[4.5vw] py-6 md:py-20 bg-white lg:h-[450px] 2xl:h-auto flex flex-col lg:flex-row items-center gap-5 justify-between 2xl:justify-evenly '>
+        <div className="box1 border p-1 w-[95%] md:w-[90%] max-w-[600px] xl:max-w-1/2 flex flex-col gap-[2vw] lg:gap-[4] items-start ">
           <div className='p-2.5 text-sm text-blue-800  rounded-sm inline-block bg-[#dbdbff] hover:bg-[#d2d2f8] '>
             <span className='font-bold text-blue-800 '>Get ₹500 Lorem ipsum</span> dolor sit amet consectetur adipisicing
             <span>➡️</span>
@@ -44,7 +44,7 @@ const Mainlanding1 = () => {
             <button className='p-3 border border-blue-500 rounded-full text-blue-700 font-bold hover:shadow shadow-gray-500 '>Contact sales</button>
           </div>
         </div>
-        <div className="box2 h-fit w-[98%] md:w-[90%] max-w-[450px] rounded-4xl overflow-hidden hover:rounded-xl transition-all lg:translate-y-10 bg-red-400">
+        <div className="box2 h-fit w-[98%] md:w-[90%] max-w-[450px] 2xl:max-w-lg rounded-4xl overflow-hidden hover:rounded-xl transition-all lg:translate-y-10 bg-red-400">
           <img className='w-auto' src="https://www.gstatic.com/bricks/image/c0deb473-e886-496f-94cf-631303dffb39.jpg" alt="google image" />
         </div>
       </main>

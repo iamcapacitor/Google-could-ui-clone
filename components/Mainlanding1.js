@@ -28,40 +28,41 @@ const Mainlanding1 = () => {
   
   return (
     <>
-      <main className='p-[4.5vw] bg-white h-[450px] flex justify-between '>
-        <div className="box1 border p-1 w-[90%] max-w-[600px] flex flex-col gap-[2vw] items-start ">
+      <main className=' px-[1vw] md:px-[4.5vw] py-6 md:py-20 bg-white lg:h-[450px] flex flex-col lg:flex-row items-center gap-5 justify-between 2xl:justify-evenly '>
+        <div className="box1 border p-1 w-[95%] md:w-[90%] max-w-[600px] flex flex-col gap-[2vw] items-start ">
           <div className='p-2.5 text-sm text-blue-800  rounded-sm inline-block bg-[#dbdbff] hover:bg-[#d2d2f8] '>
             <span className='font-bold text-blue-800 '>Get ₹500 Lorem ipsum</span> dolor sit amet consectetur adipisicing
             <span>➡️</span>
           </div>
-          <div className='flex flex-col gap-[1vw] text-5xl'>
+          <div className='flex flex-col gap-[1vw] text-4xl md:text-5xl'>
             <div><h2 className=' font-bold bg-gradient-to-b from-amber-500 to-blue-500 bg-clip-text text-transparent '>Kisan farm vegetables</h2></div>
             <div><h2 className=' font-bold bg-gradient-to-b from-orange-600 to-indigo-300 bg-clip-text text-transparent '>Grows here</h2></div>
           </div>
           <div className='text-amber-950'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vel officiis eaque.</div>
-          <div className='flex p-1 gap-[2vw]'>
+          <div className='flex p-1 gap-[2vw] max-sm:flex-col w-full flex-row'>
             <button className='p-3 border border-blue-500 rounded-full bg-blue-700 text-white hover:shadow shadow-gray-500 '>Get started for free</button>
             <button className='p-3 border border-blue-500 rounded-full text-blue-700 font-bold hover:shadow shadow-gray-500 '>Contact sales</button>
           </div>
         </div>
-        <div className="box2 h-fit w-[90%] max-w-[450px] rounded-4xl overflow-hidden hover:rounded-xl transition-all bg-red-400">
+        <div className="box2 h-fit w-[98%] md:w-[90%] max-w-[450px] rounded-4xl overflow-hidden hover:rounded-xl transition-all bg-red-400">
           <img className='w-auto' src="https://www.gstatic.com/bricks/image/c0deb473-e886-496f-94cf-631303dffb39.jpg" alt="google image" />
         </div>
       </main>
-      <header className='p-[4vw] bg-[#e7e7e7]'>
-        <div className="box3 m-1 text-lg flex items-center gap-[2vw] ">
+
+      <header className='max-sm:p-[1vw] p-[4vw] bg-[#e7e7e7]'>
+        <div className="box3 m-1 max-[410px]:text-sm text-md md:text-lg flex items-center gap-[2vw] ">
           <div className='p-3 border-b-2 border-[#00000000] hover:border-blue-500 hover:bg-white hover:shadow shadow-gray-400 '>Classname is this </div>
           <div className='p-3 border-b-2 border-[#00000000] hover:border-blue-500 hover:bg-white hover:shadow shadow-gray-400 '>Contributors</div>
           <div className='p-3 border-b-2 border-[#00000000] hover:border-blue-500 hover:bg-white hover:shadow shadow-gray-400 '>Lorem ipsum</div>
         </div>
-        <div className='cardcontainer border py-[2vw] flex gap-[2vw]'>
+        <div className='cardcontainer border py-[2vw] flex flex-row flex-wrap justify-center xl:justify-start xl:flex-row gap-[2vw]'>
           {cardsarr.map((card , i)=>{
-            return (<div key={i} className="cardtype1 border hover:border-[#00000000] rounded-xl overflow-hidden shadow shadow-gray-500 w-[90%] max-w-[360px] flex items-center bg-white ">
-            <div className='py-3 px-2 w-[70%]  '>
+            return (<div key={i} className="cardtype1 border hover:border-[#00000000] rounded-xl overflow-hidden shadow shadow-gray-500 w-[98%] sm:w-[90%] max-w-[360px] flex items-center bg-white ">
+            <div className='py-3 px-2 w-[65%] sm:w-[70%]  '>
               <h3 className='text-[#5b5f63]'>{card.title}</h3>
-              <p className=' text-md truncate-text'>{card.desc} </p>
+              <p className=' text-sm sm:text-md truncate-text'>{card.desc} </p>
             </div>
-            <div className='w-[30%]'>
+            <div className='w-[35%] sm:w-[30%]'>
               <img className='w-auto' src={`${card.imageurl}`} alt="image1" />
             </div>
           </div>)

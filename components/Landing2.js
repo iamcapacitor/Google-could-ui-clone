@@ -32,8 +32,8 @@ const Landing2 = () => {
     },
   ]
   return (
-    <article className='p-10 py-18 flex items-start border border-amber-400 '>
-        <section className=' w-1/2 sticky top-30 bottom-0'>
+    <article className=' p-4 md:p-10 py-18 grid gap-y-4 grid-cols-1 md:grid-cols-2 items-start border border-amber-400 '>
+        <section className=' md:sticky top-30 bottom-0'>
             <div className='text-4xl font-bold'>
                 <h2 className='' >Lorem ipsum dolor sit amet.</h2>
                 <h2 className='text-blue-500'>Lorem ipsum dolor sit amet.</h2>
@@ -41,12 +41,12 @@ const Landing2 = () => {
             <div className='text-xl text-gray-400 py-4'>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repudiandae blanditiis soluta voluptatum possimus perferendis aliquam.</p>
             </div>
-            <div className='flex gap-[2vw]'>
+            <div className='flex flex-col sm:flex-row gap-[2vw]'>
             <button className='p-3 border border-blue-500 rounded-full bg-blue-700 text-white hover:shadow shadow-gray-500 '>Get started for free</button>
             <button className='p-3 rounded-full hover:bg-gray-100 text-blue-700 font-bold '>Lorem, ipsum dolor.</button>
           </div>
         </section>
-        <section className=' w-1/2 text-blue-600 font-bold'>
+        <section className=' text-blue-600 font-bold'>
             {list.map((e,i)=>{
               return (<div key={i} className='p-3 py-4 text-lg flex justify-between items-center border-b-2 border-b-gray-300 cursor-pointer active:border-b-blue-900'>
                 <div>{e.title}</div>

@@ -48,7 +48,6 @@ const Landing3 = () => {
             </div>
           </div>
         </div>
-        <div className="part3">part3</div>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Navigation = () => {
@@ -16,11 +17,11 @@ const Navigation = () => {
               <img src="/mainlogo.png" alt="mainlogo" loading="lazy" className='w-auto' />
             </div>
             <ul className='hidden md:flex gap-3 '>
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Solutions</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Resources</a></li>
+              <li><Link href="/Overview">Overview</Link></li>
+              <li><Link href="#">Solutions</Link></li>
+              <li><Link href="#">Products</Link></li>
+              <li><Link href="#">Pricing</Link></li>
+              <li><Link href="#">Resources</Link></li>
             </ul>
           </div>
           {/* part 2 */}
